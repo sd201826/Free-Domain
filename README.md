@@ -1,20 +1,19 @@
-# FreeDomain
+# FreeDomain Studio
 
-A responsive white-theme dashboard prototype for the FreeDomain project.
+A free visual website builder — **not a domain registrar**.
 
-## Deploy with Cloudflare Pages
+## Features
+- Create a simple one-page website with visual controls.
+- Edit website name, heading, description, button text and link.
+- Change accent, background and text colors; choose centered or left alignment.
+- Add an image using a public image URL.
+- Preview desktop and mobile layouts.
+- Export separate `index.html` and `style.css` files.
 
-1. Open Cloudflare Dashboard → **Workers & Pages** → **Create** → **Pages** → **Connect to Git**.
-2. Choose the GitHub repository `sd201826/Free-Domain`.
-3. Select the `main` branch.
-4. Choose **None** as the framework preset.
-5. Leave the build command empty and set the build output directory to `/` (repository root).
-6. Save and deploy.
+## Use
+Open `index.html` in a modern browser. No Node.js, Python, packages, or build step required. In the editor, click the download buttons and keep both downloaded files in the same folder.
 
-## Current scope
+## Deploy the builder
+Cloudflare Pages settings: branch `main`, framework preset `None`, empty build command, output directory `/`.
 
-This is a frontend prototype in a single `index.html` file. It includes a responsive dashboard, sample website list, search, and a create-website modal. Demo websites are stored in the current browser's local storage.
-
-It does **not** yet provide Google sign-in, real customer accounts, a database, real website publishing, custom domains, or email hosting. Those require a secure backend and Cloudflare configuration. Public URLs should use a username/customer handle (for example `/shachin/project-name`), never a customer's Gmail address.
-
-No Node.js, Python, or build step is required to deploy this static prototype.
+The deployed site is the builder application. This prototype exports website files to the visitor's device; it does not yet save projects to cloud accounts or automatically host users' created websites. Domain registration and hosting are separate services.
