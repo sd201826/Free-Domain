@@ -1,19 +1,29 @@
 # FreeDomain Studio
 
-A free visual website builder — **not a domain registrar**.
+A browser-based, folder-style static website builder. This is **not a domain registrar**.
 
 ## Features
-- Create a simple one-page website with visual controls.
-- Edit website name, heading, description, button text and link.
-- Change accent, background and text colors; choose centered or left alignment.
-- Add an image using a public image URL.
-- Preview desktop and mobile layouts.
-- Export separate `index.html` and `style.css` files.
+- File explorer with editable `index.html`, `style.css`, and `script.js`.
+- Add more project files.
+- Live preview with desktop and mobile widths.
+- Build checks for the static website.
+- Save working files in browser local storage.
+- Download individual source files or the whole project as a ZIP.
+- Starter eSports-style website template.
 
-## Use
-Open `index.html` in a modern browser. No Node.js, Python, packages, or build step required. In the editor, click the download buttons and keep both downloaded files in the same folder.
+## Run and use
+Open the deployed site in a modern browser. No Node.js, Python, or local installation is required for the included HTML/CSS/JS starter project.
 
-## Deploy the builder
-Cloudflare Pages settings: branch `main`, framework preset `None`, empty build command, output directory `/`.
+## Build / install / deploy
+- **Build:** checks the project and refreshes its preview.
+- **Install:** this starter has no external packages, so no install step is required.
+- **Download:** exports a ZIP containing the website folder and its files.
+- **Deploy:** the Cloudflare button opens the Pages dashboard. The builder's own site is deployed from this GitHub repository automatically on pushes to `main`.
 
-The deployed site is the builder application. This prototype exports website files to the visitor's device; it does not yet save projects to cloud accounts or automatically host users' created websites. Domain registration and hosting are separate services.
+## Current limitations
+The editor saves projects in the current browser only. The Deploy button does not yet upload an individual customer's edited folder to GitHub/Cloudflare. That needs a secure GitHub authorization flow and server-side project publishing. Custom domains and customer accounts are not included yet.
+
+## Cloudflare Pages
+Repository: https://github.com/sd201826/Free-Domain
+Project: https://freedomain-studio.pages.dev
+Production branch: `main`; framework preset: None; build command: blank; output directory: `/`.
